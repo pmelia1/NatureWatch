@@ -4,9 +4,29 @@
 <h2>@ViewData["Title"].</h2>
 <h3>@ViewData["Message"]</h3>
 
-<p>Use this area to provide additional information.</p>
+<script src="~/lib/angular/angular.min.js"></script>
 
-<script type="text/javascript">
+<div ng-app="myApp" ng-controller="myCtrl">
 
+    <p>Use this area to provide additional information.</p>
 
-</script>
+    <p>{{fatguy}}</p>
+
+    First Name: <input type="text" ng-model="firstName"><br>
+    Last Name: <input type="text" ng-model="lastName"><br>
+    <br>
+    Full Name: {{firstName + " " + lastName}}
+
+</div>
+
+    <script type="text/javascript">
+
+        var app = angular.module('myApp', []);
+        app.controller('myCtrl', function ($scope) {
+            $scope.fatguy = "whassup?";
+
+            $scope.firstName = "John";
+            $scope.lastName = "Doe";
+        });
+
+    </script>

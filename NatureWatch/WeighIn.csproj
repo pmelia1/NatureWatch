@@ -8,9 +8,14 @@
   <PropertyGroup>
     <UserSecretsId>aspnet-NatureWatch-d8ac6361-32e5-40bf-a0ec-b05ad5f6fcd8</UserSecretsId>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="wwwroot\lib\angular\angular.min.js" />
+  </ItemGroup>
   <ItemGroup>
     <PackageReference Include="angularjs" Version="1.6.4" />
     <PackageReference Include="AngularJS.Core" Version="1.6.4" />
+    <PackageReference Include="bootstrap" Version="3.3.7" />
     <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.0.0" />
     <PackageReference Include="Microsoft.AspNetCore" Version="1.1.1" />
     <PackageReference Include="Microsoft.AspNetCore.Authentication.Cookies" Version="1.1.1" />
